@@ -8,10 +8,12 @@
 <meta property="og:title" content="Golden Age Spiritual Movement">
 <meta property="og:description" content="Spiritual discourses of Dr Hari Krishna — free for every seeker. Wisdom · Wellness · Meditation.">
 <meta property="og:image" content="https://i.ytimg.com/vi/xRZMvf0AvPs/hqdefault.jpg">
+<meta name="theme-color" content="#171034">
 <link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500;1,700&family=Inter:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Golden Age Spiritual Movement","description":"Non-profit spiritual movement sharing the teachings of Dr Hari Krishna","url":"https://goldenagescience.github.io/goldenage/","sameAs":["https://www.youtube.com/@GoldenAgeGurus"]}
 </script>
@@ -21,16 +23,17 @@
     --panel-hi:rgba(255,255,255,.05);
     --line:rgba(255,255,255,.07); --line-hi:rgba(242,178,92,.38);
     --gold:#f2b25c; --gold-hi:#ffd28a; --ember:#e2632c; --violet:#7c5cff;
-    --text:#f0ede6; --dim:#a8a199; --faint:#6f6a63;
+    --text:#f2efe8; --dim:#b6afa4; --faint:#8b8377;
     --serif:'Playfair Display',Georgia,serif;
-    --sans:'Inter','Noto Sans Telugu',system-ui,sans-serif;
-    --tel:'Noto Sans Telugu','Inter',sans-serif;
+    --sans:'Inter','Noto Sans Kannada',system-ui,sans-serif;
+    --tel:'Noto Sans Kannada','Inter',sans-serif;
     --r:16px; --r-sm:10px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65;font-size:15.5px;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-  body.te{font-family:var(--tel)}
+  body.kn{font-family:var(--tel)}
+  body.te{--tel:'Noto Sans Telugu','Inter',sans-serif;font-family:var(--tel)}
   ::selection{background:rgba(242,178,92,.35)}
   .container{max-width:1120px;margin:0 auto;padding:0 24px}
   .ic{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
@@ -58,6 +61,9 @@
   nav.links{display:flex;gap:2px;align-items:center}
   nav.links a{color:var(--dim);text-decoration:none;font-size:.85rem;font-weight:500;padding:7px 12px;border-radius:8px;transition:.15s}
   nav.links a:hover{color:var(--text);background:var(--panel-hi)}
+  .lang-seg{display:flex;gap:2px;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:3px;flex-shrink:0;backdrop-filter:blur(14px)}
+  .lang-seg button{border:0;background:none;color:var(--dim);font-size:.72rem;font-weight:600;padding:5px 10px;border-radius:8px;cursor:pointer;font-family:'Inter','Noto Sans Kannada','Noto Sans Telugu',sans-serif;transition:.15s}
+  .lang-seg button.on{background:rgba(242,178,92,.2);color:var(--gold-hi)}
   .lang-btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:8px;padding:6px 13px;font-size:.78rem;font-weight:600;cursor:pointer;font-family:var(--tel);transition:.15s;flex-shrink:0}
   .lang-btn:hover{border-color:var(--line-hi);background:var(--panel-hi)}
   .burger{display:none;background:none;border:0;cursor:pointer;padding:8px;flex-shrink:0}
@@ -86,7 +92,7 @@
   .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(10,9,17,.5);padding:6px 14px;border-radius:999px;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);backdrop-filter:blur(10px);font-weight:600}
   .eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold)}
   .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.5rem,5.2vw,4.1rem);line-height:1.1;margin:26px 0 12px;letter-spacing:-.015em}
-  body.te .hero h1{font-family:var(--tel);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.28;letter-spacing:0}
+  body.kn .hero h1,body.te .hero h1{font-family:var(--tel);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.28;letter-spacing:0}
   .hero h1 .grad{background:linear-gradient(95deg,var(--gold-hi) 5%,var(--gold) 45%,var(--ember) 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
   .tel-line{font-family:var(--tel);color:var(--gold);font-size:clamp(.95rem,1.9vw,1.15rem);margin-bottom:18px;opacity:.9}
   .lede{color:var(--dim);font-size:1.02rem;max-width:500px;margin-bottom:22px;line-height:1.7}
@@ -126,7 +132,7 @@
   .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
   .kicker{color:var(--gold);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
   .sec-head h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:700;letter-spacing:-.03em;line-height:1.15;margin:12px 0 6px}
-  body.te .sec-head h2{letter-spacing:0;line-height:1.35;font-weight:600}
+  body.kn .sec-head h2,body.te .sec-head h2{letter-spacing:0;line-height:1.35;font-weight:600}
   .sec-head .tl{font-family:var(--tel);color:var(--gold);font-size:.9rem;opacity:.85}
   .sec-head .sub{color:var(--dim);margin-top:10px;font-size:.95rem}
   .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
@@ -214,7 +220,7 @@
   .reader-in{max-width:700px;margin:0 auto;background:var(--bg2);border:1px solid var(--line);border-radius:20px;padding:52px 50px;position:relative}
   .reader-in .kicker{margin-bottom:8px;display:block}
   .reader-in h2{font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:4px;letter-spacing:-.01em}
-  body.te .reader-in h2{font-family:var(--tel)}
+  body.kn .reader-in h2,body.te .reader-in h2{font-family:var(--tel)}
   .reader-in .tl{font-family:var(--tel);color:var(--gold);margin-bottom:22px;font-size:.9rem}
   .reader-in p{color:var(--dim);margin-bottom:15px;font-size:.96rem;line-height:1.75}
   .reader-in .watch{margin-top:26px}
@@ -225,7 +231,7 @@
   .quote::before{content:"";position:absolute;inset:0;background:radial-gradient(620px 300px at 50% 50%,rgba(124,92,255,.07),transparent 70%)}
   .quote>*{position:relative}
   .quote blockquote{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.25rem,2.6vw,1.8rem);max-width:800px;margin:0 auto 18px;line-height:1.5}
-  body.te .quote blockquote{font-family:var(--tel);font-style:normal}
+  body.kn .quote blockquote,body.te .quote blockquote{font-family:var(--tel);font-style:normal}
   .quote cite{color:var(--gold);font-style:normal;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
 
   /* ---------- gallery ---------- */
@@ -239,7 +245,7 @@
   .live-card::before{content:"";position:absolute;inset:0;background:radial-gradient(480px 220px at 50% 0%,rgba(242,178,92,.1),transparent 70%)}
   .live-card>*{position:relative}
   .live-card h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;letter-spacing:-.03em;margin:12px 0 8px}
-  body.te .live-card h2{letter-spacing:0;font-weight:600}
+  body.kn .live-card h2,body.te .live-card h2{letter-spacing:0;font-weight:600}
   .live-card p{color:var(--dim);max-width:540px;margin:0 auto 28px;font-size:.94rem}
   .live-dot{display:inline-flex;align-items:center;gap:8px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#f87171;font-weight:600}
   .live-dot::before{content:"";width:8px;height:8px;border-radius:50%;background:#ef4444;animation:blink 1.4s infinite}
@@ -303,6 +309,95 @@
   .tabbar a svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.7}
   .tabbar a.on{color:var(--gold-hi);background:rgba(242,178,92,.09)}
 
+
+
+  /* ================= FINISHING PASS ================= */
+  *{-webkit-tap-highlight-color:transparent}
+  a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,[data-video]:focus-visible{
+    outline:2px solid var(--gold);outline-offset:3px;border-radius:6px;
+  }
+  .btn:active{transform:translateY(0) scale(.97)}
+  .fchip:active,.lang-seg button:active{transform:scale(.96)}
+  .lang-seg button{padding:8px 13px;min-height:34px}
+  .marquee{
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+  }
+  .marquee-track{animation-duration:48s}
+  #stars{opacity:.32}
+  .vmeta p{font-size:.78rem}
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+  }
+  @media (max-width:960px){
+    #cform .btn{width:100%;justify-content:center}
+    .lib-cta .btn{width:100%;justify-content:center}
+  }
+
+  /* ================= GLASSMORPHISM THEME ================= */
+  body{background:#150e28}
+  #aurora{
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(1100px 700px at 85% -10%, rgba(124,92,255,.24), transparent 60%),
+      radial-gradient(900px 600px at -10% 30%, rgba(226,99,44,.17), transparent 60%),
+      radial-gradient(1000px 700px at 50% 115%, rgba(242,178,92,.13), transparent 60%),
+      linear-gradient(165deg,#171034 0%,#1d0f30 45%,#1a0d28 75%,#120b22 100%);
+  }
+  #pre{background:linear-gradient(165deg,#171034,#120b22)}
+  .glow1{background:radial-gradient(circle,rgba(242,178,92,.4),transparent 70%);opacity:.55}
+  .glow2{background:radial-gradient(circle,rgba(124,92,255,.38),transparent 70%);opacity:.55}
+  body::before{
+    content:"";position:fixed;width:620px;height:620px;left:55%;top:28%;
+    border-radius:50%;background:radial-gradient(circle,rgba(226,99,44,.2),transparent 70%);
+    filter:blur(90px);z-index:0;pointer-events:none;
+    animation:gdrift 22s ease-in-out infinite alternate;
+  }
+  @keyframes gdrift{0%{transform:translate(-60%,-50%) scale(1)}100%{transform:translate(-40%,-38%) scale(1.15)}}
+  .hero::after{background:none}
+  .hero{background:none}
+
+  /* glass surfaces */
+  .bcard,.vcard,.tcard,.ecard,.jcard,.live-card,.portrait,.mission-strip,
+  .reader-in,.gslot,.hero-card,.mobile-menu{
+    background:rgba(255,255,255,.055);
+    border:1px solid rgba(255,255,255,.14);
+    backdrop-filter:blur(22px) saturate(160%);
+    -webkit-backdrop-filter:blur(22px) saturate(160%);
+    box-shadow:0 8px 32px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.16);
+  }
+  .bcard:hover,.vcard:hover,.tcard:hover,.jcard:hover,.ecard:hover{
+    border-color:rgba(255,210,138,.45);
+    background:rgba(255,255,255,.08);
+    box-shadow:0 20px 48px rgba(0,0,0,.42), inset 0 1px 0 rgba(255,255,255,.22);
+  }
+  .eyebrow,.fchip,.lang-btn,.pill,.icw,.bic,.btn-ghost,input,textarea,
+  .search-wrap input,.lb-x,.reader-x,.top-btn{
+    background:rgba(255,255,255,.06);
+    border-color:rgba(255,255,255,.16);
+    backdrop-filter:blur(14px) saturate(150%);
+    -webkit-backdrop-filter:blur(14px) saturate(150%);
+  }
+  .fchip.on{background:rgba(242,178,92,.2);border-color:rgba(255,210,138,.55);color:var(--gold-hi);box-shadow:inset 0 1px 0 rgba(255,255,255,.25)}
+  .btn-ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.28)}
+  input:focus,textarea:focus{background:rgba(255,255,255,.09);border-color:rgba(255,210,138,.5)}
+  header.scrolled{background:rgba(23,16,45,.5);backdrop-filter:blur(26px) saturate(170%);box-shadow:inset 0 -1px 0 rgba(255,255,255,.1)}
+  .tabbar{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.16);backdrop-filter:blur(30px) saturate(170%);box-shadow:0 16px 44px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.18)}
+  .live-card{background:linear-gradient(140deg,rgba(242,178,92,.1),rgba(124,92,255,.1) 60%,rgba(255,255,255,.05))}
+  .live-card::before{background:radial-gradient(480px 220px at 50% 0%,rgba(255,210,138,.16),transparent 70%)}
+  .vthumb{background:rgba(18,12,34,.6)}
+  .marquee{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.12);backdrop-filter:blur(12px)}
+  footer{background:rgba(12,9,24,.55);backdrop-filter:blur(16px);border-top-color:rgba(255,255,255,.1)}
+  .quote::before{background:radial-gradient(620px 300px at 50% 50%,rgba(124,92,255,.14),transparent 70%)}
+  .lightbox,.reader{background:rgba(14,10,28,.7);backdrop-filter:blur(24px) saturate(140%)}
+  .reader-in{background:rgba(30,20,52,.75)}
+  .timeline{border-left-color:rgba(255,255,255,.16)}
+  .hero-stats{border-top-color:rgba(255,255,255,.14)}
+  .gslot{border-style:dashed;border-color:rgba(255,255,255,.22)}
+  .btn-primary{box-shadow:0 0 0 1px rgba(255,210,138,.35) inset,0 10px 30px rgba(226,99,44,.45)}
+
   @media (max-width:960px){
     .hero-inner{grid-template-columns:1fr;gap:44px}
     .hero{padding-top:100px;min-height:auto}
@@ -332,6 +427,7 @@
 </style>
 </head>
 <body>
+<div id="aurora"></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z"/></symbol>
@@ -365,7 +461,7 @@
       <span class="brand-mark" id="brandMark"><img src="logo.png" alt="Golden Age Spiritual Movement" onerror="this.dataset.failed='1';this.style.display='none'"></span>
       <span>
         <b data-i18n="brand">Golden Age Spiritual Movement</b>
-        <small data-i18n="brandsub">Non-profit · Seva · గురు వాణి</small>
+        <small data-i18n="brandsub">Non-profit · Seva · Guru Vani</small>
       </span>
     </a>
     <nav class="links">
@@ -375,7 +471,11 @@
       <a href="#events" data-i18n="nav_e">Events</a>
       <a href="#contact" data-i18n="nav_c">Contact</a>
     </nav>
-    <button class="lang-btn" id="langBtn">తెలుగు</button>
+    <div class="lang-seg" id="langSeg">
+      <button data-lang="en" class="on">EN</button>
+      <button data-lang="kn">ಕನ್ನಡ</button>
+      <button data-lang="te">తెలుగు</button>
+    </div>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mm">
@@ -395,7 +495,6 @@
     <div>
       <span class="eyebrow" data-i18n="eyebrow">A Non-Profit Spiritual Movement</span>
       <h1><span data-i18n="h1a">Awakening the World to a</span> <span class="grad" data-i18n="h1b">Golden Age</span> <span data-i18n="h1c">of Wisdom</span></h1>
-      <div class="tel-line">మా గురువుగారి జ్ఞాన జ్యోతిని అందరికీ పంచుదాం</div>
       <p class="lede" data-i18n="lede">The discourses and teachings of Dr Hari Krishna — meditation, transformation and conscious living — shared freely with every seeker, as pure seva.</p>
       <div class="mission-strip">
         <svg class="ic" style="color:var(--gold);margin-top:2px"><use href="#i-lotus"/></svg>
@@ -426,7 +525,7 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track" id="mqTrack">
-    <span><em>Wisdom</em> · జ్ఞానం</span><span><em>Wellness</em> · ఆరోగ్యం</span><span><em>Meditation</em> · ధ్యానం</span><span>Aham Brahmasmi</span><span>Tat Tvam Asi</span><span><em>Seva</em> · సేవ</span>
+    <span><em>Wisdom</em> · ಜ್ಞಾನ</span><span><em>Wellness</em> · ಕ್ಷೇಮ</span><span><em>Meditation</em> · ಧ್ಯಾನ</span><span>Aham Brahmasmi</span><span>Tat Tvam Asi</span><span><em>Seva</em> · ಸೇವೆ</span>
   </div>
 </div>
 
@@ -436,7 +535,6 @@
     <div class="sec-head center reveal">
       <div class="kicker" data-i18n="k_b">Our Pledge</div>
       <h2 data-i18n="h_b">Built as seva, designed for seekers</h2>
-      <div class="tl">సేవగా నిర్మించబడింది</div>
     </div>
     <div class="bento">
       <div class="bcard s7 reveal">
@@ -453,8 +551,8 @@
       <div class="bcard s5 reveal">
         <div class="bic"><svg class="ic"><use href="#i-globe"/></svg></div>
         <h3 data-i18n="b3h">In your language</h3>
-        <p data-i18n="b3p">The entire platform in English and తెలుగు — switch anytime, one tap.</p>
-        <span class="wm" style="font-size:3.2rem">అ A</span>
+        <p data-i18n="b3p">The entire platform in English, ಕನ್ನಡ and తెలుగు — switch anytime, one tap.</p>
+        <span class="wm" style="font-size:2.8rem">A ಅ అ</span>
       </div>
       <div class="bcard s7 reveal">
         <div class="bic"><svg class="ic"><use href="#i-sun"/></svg></div>
@@ -471,7 +569,6 @@
     <div class="sec-head reveal">
       <div class="kicker" data-i18n="k_lib">Video Library</div>
       <h2 data-i18n="h_lib">Discourses of Dr Hari Krishna</h2>
-      <div class="tl">గురువుగారి ప్రవచనాలు</div>
       <p class="sub" data-i18n="s_lib">Tap any discourse to watch instantly — every teaching is free, forever.</p>
     </div>
     <div class="lib-bar reveal">
@@ -501,7 +598,6 @@
       <h2 style="font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;letter-spacing:-.03em;line-height:1.15;margin:12px 0 8px" data-i18n="h_ab">Where Science Meets Spirit</h2>
       <p style="margin-top:10px" data-i18n="ab1">Dr Hari Krishna is a medical doctor (MD) based in Bengaluru who has devoted more than 25 years to the study of consciousness and inner exploration. A rare bridge between the clinic and the cave, he presents spirituality not as blind belief but as a practical science — explaining the timeless truths of the Upanishads through the language of biology, neurology, psychology and quantum mechanics.</p>
       <p data-i18n="ab2">He teaches meditation as a lifestyle, not an escape: a practical transformation that dissolves fear and anxiety while expanding compassion and awareness. Those who learn from him speak of his humility, his patience, and a selfless way of teaching that makes the deepest concepts simple for the modern mind.</p>
-      <p class="tl-para">డా. హరి కృష్ణ గారు బెంగళూరుకు చెందిన వైద్యులు. 25 సంవత్సరాలకు పైగా ధ్యానం, చైతన్య అన్వేషణలో నిమగ్నమై, ఆధునిక విజ్ఞానాన్ని ఆధ్యాత్మికతతో కలిపి బోధిస్తున్నారు.</p>
       <div class="timeline">
         <div class="tstep"><h4 data-i18n="t1h">The Physician</h4><p data-i18n="t1p">An MD with a Master's in Medicine — decades of clinical practice grounded in evidence and care.</p></div>
         <div class="tstep"><h4 data-i18n="t2h">The Seeker — 25+ Years</h4><p data-i18n="t2p">A parallel journey inward: meditation, the Upanishads, and the science of consciousness.</p></div>
@@ -525,7 +621,6 @@
     <div class="sec-head center reveal">
       <div class="kicker" data-i18n="k_t">Written Word</div>
       <h2 data-i18n="h_t">Teachings &amp; Reflections</h2>
-      <div class="tl">బోధనలు &amp; సందేశాలు</div>
       <p class="sub" data-i18n="s_t">Themes from the discourses, distilled for daily life. Tap a card to read.</p>
     </div>
     <div class="tgrid" id="tgrid"></div>
@@ -544,7 +639,6 @@
     <div class="sec-head center reveal">
       <div class="kicker" data-i18n="k_g">Moments</div>
       <h2 data-i18n="h_g">Gallery</h2>
-      <div class="tl">జ్ఞాపకాలు</div>
       <p class="sub" data-i18n="s_g">Photographs from satsangs and seva — coming soon.</p>
     </div>
     <div class="ggrid reveal">
@@ -574,7 +668,6 @@
     <div class="sec-head center reveal">
       <div class="kicker" data-i18n="k_e">Gatherings</div>
       <h2 data-i18n="h_e">Satsangs &amp; Seva Events</h2>
-      <div class="tl">రాబోయే సత్సంగాలు</div>
     </div>
     <div class="egrid">
       <div class="ecard reveal"><div class="date"><b>--</b><span>TBD</span></div><div><h3 data-i18n="e1h">Weekly Satsang</h3><p data-i18n="e1p">Regular satsang timing, venue or livestream link will be announced here.</p></div></div>
@@ -589,7 +682,6 @@
     <div class="sec-head center reveal">
       <div class="kicker" data-i18n="k_j">Stay Connected</div>
       <h2 data-i18n="h_j">Walk With Us</h2>
-      <div class="tl">మాతో నడవండి</div>
     </div>
     <div class="join-grid">
       <div class="jcard reveal">
@@ -620,9 +712,9 @@
       <div class="cline"><span class="icw"><svg viewBox="0 0 24 24"><use href="#i-yt"/></svg></span><a href="https://www.youtube.com/@GoldenAgeGurus" target="_blank" rel="noopener">youtube.com/@GoldenAgeGurus</a></div>
     </div>
     <form id="cform" class="reveal">
-      <div class="row"><input type="text" name="name" placeholder="Your name · మీ పేరు" required></div>
-      <div class="row"><input type="email" name="email" placeholder="Your email · మీ ఇమెయిల్" required></div>
-      <div class="row"><textarea name="message" rows="5" placeholder="Your message · మీ సందేశం" required></textarea></div>
+      <div class="row"><input type="text" name="name" placeholder="Your name" required></div>
+      <div class="row"><input type="email" name="email" placeholder="Your email" required></div>
+      <div class="row"><textarea name="message" rows="5" placeholder="Your message" required></textarea></div>
       <button class="btn btn-primary" type="submit"><span data-i18n="send">Send Message</span><span class="ar">→</span></button>
       <div class="form-msg" id="fmsg"></div>
     </form>
@@ -652,7 +744,7 @@
       </div>
     </div>
     <div class="fbot">
-      <div class="shanti">ఓం శాంతి శాంతి శాంతిః</div>
+      <div class="shanti">ಓಂ ಶಾಂತಿ ಶಾಂತಿ ಶಾಂತಿಃ · Om Shanti Shanti Shantihi</div>
       <p>© <span id="year"></span> Golden Age Spiritual Movement · <span data-i18n="devotion">Made with devotion</span> 🙏</p>
     </div>
   </div>
@@ -744,11 +836,11 @@ document.getElementById('preLogo').appendChild(LOGO_SVG(false));
 
 /* ============ DATA — EDIT HERE ============ */
 const VIDEOS = [
-  { id:"xRZMvf0AvPs", cat:"discourse",  title:"Spirituality Simplified", te:"ఆధ్యాత్మికత సరళంగా" },
-  { id:"18Zt42-CuRs", cat:"meditation", title:"Science of Meditation", te:"ధ్యాన శాస్త్రం" },
-  { id:"-nC5vImygJ0", cat:"practice",   title:"Why Spiritual Masters Sun Gaze Every Morning", te:"సూర్య దర్శన సాధన" },
-  { id:"GhrBu2qsszg", cat:"discourse",  title:"Secrets of Transformation in Spirituality", te:"పరివర్తన రహస్యాలు" },
-  { id:"IrnwQNZVGVM", cat:"meditation", title:"Guided Meditation", te:"మార్గదర్శక ధ్యానం" },
+  { id:"xRZMvf0AvPs", cat:"discourse",  title:"Spirituality Simplified", kn:"ಆಧ್ಯಾತ್ಮಿಕತೆ ಸರಳವಾಗಿ", te:"ఆధ్యాత్మికత సరళంగా" },
+  { id:"18Zt42-CuRs", cat:"meditation", title:"Science of Meditation", kn:"ಧ್ಯಾನ ವಿಜ್ಞಾನ", te:"ధ్యాన శాస్త్రం" },
+  { id:"-nC5vImygJ0", cat:"practice",   title:"Why Spiritual Masters Sun Gaze Every Morning", kn:"ಸೂರ್ಯ ದರ್ಶನ ಸಾಧನೆ", te:"సూర్య దర్శన సాధన" },
+  { id:"GhrBu2qsszg", cat:"discourse",  title:"Secrets of Transformation in Spirituality", kn:"ಪರಿವರ್ತನೆಯ ರಹಸ್ಯಗಳು", te:"పరివర్తన రహస్యాలు" },
+  { id:"IrnwQNZVGVM", cat:"meditation", title:"Guided Meditation", kn:"ಮಾರ್ಗದರ್ಶಿತ ಧ್ಯಾನ", te:"మార్గదర్శక ధ్యానం" },
 ];
 
 const ARTICLES = [
@@ -757,6 +849,10 @@ const ARTICLES = [
       "In his discourse on the science of meditation, Dr Hari Krishna approaches the practice the way a physician approaches medicine — not as mysticism, but as a repeatable method with observable effects on the body and mind.",
       "Meditation, he explains, is not an escape from life but a training of attention. When practised sincerely and regularly, it begins to quiet the restless activity of the mind, reduce fear and anxiety, and expand our natural capacity for compassion and awareness.",
       "The invitation is simple: do not believe — practise, observe, and verify in your own experience. That is the scientific spirit applied inward."]},
+    kn:{ t:"ಧ್ಯಾನ ವಿಜ್ಞಾನ", body:[
+      "ಧ್ಯಾನ ಎಂದರೆ ಮೂಢನಂಬಿಕೆಯಲ್ಲ — ದೇಹ ಮತ್ತು ಮನಸ್ಸಿನ ಮೇಲೆ ಗಮನಿಸಬಹುದಾದ ಪರಿಣಾಮ ಬೀರುವ ಒಂದು ವಿಧಾನ ಎಂದು ಡಾ. ಹರಿ ಕೃಷ್ಣ ಅವರು ವಿವರಿಸುತ್ತಾರೆ.",
+      "ಧ್ಯಾನ ಜೀವನದಿಂದ ಪಲಾಯನವಲ್ಲ; ಅದು ಗಮನದ ತರಬೇತಿ. ನಿಯಮಿತ ಸಾಧನೆಯಿಂದ ಮನಸ್ಸು ಶಾಂತವಾಗುತ್ತದೆ, ಭಯ-ಆತಂಕ ಕಡಿಮೆಯಾಗುತ್ತವೆ, ಕರುಣೆ-ಅರಿವು ಬೆಳೆಯುತ್ತವೆ.",
+      "ನಂಬಬೇಡಿ — ಸಾಧನೆ ಮಾಡಿ, ಗಮನಿಸಿ, ನಿಮ್ಮ ಅನುಭವದಲ್ಲೇ ದೃಢಪಡಿಸಿಕೊಳ್ಳಿ. ಇದೇ ಒಳಮುಖವಾಗಿ ಅನ್ವಯಿಸಿದ ವೈಜ್ಞಾನಿಕ ದೃಷ್ಟಿ."]},
     te:{ t:"ధ్యాన శాస్త్రం", body:[
       "ధ్యానం అనేది మూఢనమ్మకం కాదు — శరీరం, మనస్సు మీద గమనించదగిన ప్రభావాలు చూపే ఒక పద్ధతి అని డా. హరి కృష్ణ గారు వివరిస్తారు.",
       "ధ్యానం జీవితం నుండి పారిపోవడం కాదు; అది శ్రద్ధకు శిక్షణ. క్రమం తప్పకుండా సాధన చేస్తే మనస్సు నిశ్చలమవుతుంది, భయం-ఆందోళన తగ్గుతాయి, కరుణ-అవగాహన పెరుగుతాయి.",
@@ -766,6 +862,10 @@ const ARTICLES = [
       "Why do spiritual masters greet the rising sun? In this discourse, Dr Hari Krishna explores the ancient practice of sun gazing — its discipline, its right method, and its place in a morning sadhana.",
       "Practised at the gentle hours of sunrise, the discipline is less about the sun and more about ourselves: rising early, meeting the day with stillness, and aligning the body's rhythms with nature's.",
       "As with every practice he teaches, the emphasis is on care, gradualness and direct experience — never force."]},
+    kn:{ t:"ಸೂರ್ಯ ದರ್ಶನ & ಮುಂಜಾನೆ ಸಾಧನೆ", body:[
+      "ಆಧ್ಯಾತ್ಮಿಕ ಗುರುಗಳು ಉದಯಿಸುವ ಸೂರ್ಯನನ್ನು ಏಕೆ ದರ್ಶಿಸುತ್ತಾರೆ? ಈ ಪ್ರವಚನದಲ್ಲಿ ಸೂರ್ಯ ದರ್ಶನ ಸಾಧನೆ — ಅದರ ಶಿಸ್ತು, ಸರಿಯಾದ ವಿಧಾನದ ವಿವರಣೆ ಇದೆ.",
+      "ಸೂರ್ಯೋದಯದ ಸಮಯದಲ್ಲಿ ಮಾಡುವ ಈ ಸಾಧನೆ ಸೂರ್ಯನ ಬಗ್ಗೆ ಅಲ್ಲ — ನಮ್ಮ ಬಗ್ಗೆ: ಬೇಗ ಏಳುವುದು, ಮೌನದಿಂದ ದಿನವನ್ನು ಸ್ವಾಗತಿಸುವುದು, ಪ್ರಕೃತಿಯ ಲಯದೊಂದಿಗೆ ದೇಹವನ್ನು ಹೊಂದಿಸುವುದು.",
+      "ಪ್ರತಿ ಸಾಧನೆಯಲ್ಲೂ ಅವರು ಒತ್ತಿ ಹೇಳುವುದು: ಎಚ್ಚರಿಕೆ, ಕ್ರಮೇಣ ಪ್ರಗತಿ, ಸ್ವಾನುಭವ — ಬಲವಂತ ಎಂದಿಗೂ ಅಲ್ಲ."]},
     te:{ t:"సూర్య దర్శనం & ఉదయ సాధన", body:[
       "ఆధ్యాత్మిక గురువులు ఉదయించే సూర్యుడిని ఎందుకు దర్శిస్తారు? ఈ ప్రవచనంలో సూర్య దర్శన సాధన — దాని క్రమశిక్షణ, సరైన పద్ధతి గురించి వివరణ ఉంది.",
       "సూర్యోదయ సమయంలో చేసే ఈ సాధన సూర్యుడి గురించి కాదు — మన గురించి: త్వరగా లేవడం, నిశ్శబ్దంతో రోజును ఆహ్వానించడం, ప్రకృతి లయతో శరీరాన్ని అనుసంధానించడం.",
@@ -775,6 +875,10 @@ const ARTICLES = [
       "Real transformation, Dr Hari Krishna teaches, is not a dramatic event but a quiet unfolding. Genuine awakening comes naturally through sincere practice — never through forced techniques.",
       "In this discourse he demystifies concepts like kundalini and inner awakening, placing them on the firm ground of practice, patience and understanding rather than sensation and spectacle.",
       "Spirituality, in his telling, simplifies life: fear loosens its grip, relationships soften, and the ordinary day becomes the field of practice."]},
+    kn:{ t:"ಪರಿವರ್ತನೆಯ ರಹಸ್ಯಗಳು", body:[
+      "ನಿಜವಾದ ಪರಿವರ್ತನೆ ನಾಟಕೀಯ ಘಟನೆಯಲ್ಲ — ಅದು ಮೌನವಾಗಿ ಅರಳುವ ಪ್ರಕ್ರಿಯೆ. ಪ್ರಾಮಾಣಿಕ ಸಾಧನೆಯಿಂದಲೇ ನಿಜವಾದ ಜಾಗೃತಿ ಸಹಜವಾಗಿ ಬರುತ್ತದೆ.",
+      "ಈ ಪ್ರವಚನದಲ್ಲಿ ಕುಂಡಲಿನಿ, ಅಂತರಂಗ ಜಾಗೃತಿ ಮುಂತಾದ ಪರಿಕಲ್ಪನೆಗಳನ್ನು ಸಂಚಲನದಿಂದ ಬೇರ್ಪಡಿಸಿ — ಸಾಧನೆ, ತಾಳ್ಮೆ, ತಿಳಿವಳಿಕೆ ಎಂಬ ಅಡಿಪಾಯದ ಮೇಲೆ ನಿಲ್ಲಿಸುತ್ತಾರೆ.",
+      "ಆಧ್ಯಾತ್ಮಿಕತೆ ಜೀವನವನ್ನು ಸರಳಗೊಳಿಸುತ್ತದೆ: ಭಯದ ಹಿಡಿತ ಸಡಿಲವಾಗುತ್ತದೆ, ಸಂಬಂಧಗಳು ಮೃದುವಾಗುತ್ತವೆ, ಸಾಮಾನ್ಯ ದಿನವೇ ಸಾಧನಾ ಕ್ಷೇತ್ರವಾಗುತ್ತದೆ."]},
     te:{ t:"పరివర్తన రహస్యాలు", body:[
       "నిజమైన పరివర్తన ఒక నాటకీయ సంఘటన కాదు — అది నిశ్శబ్దంగా వికసించే ప్రక్రియ. నిజాయితీగల సాధన ద్వారానే నిజమైన మేల్కొలుపు సహజంగా వస్తుంది.",
       "ఈ ప్రవచనంలో కుండలిని, అంతర్ జాగృతి వంటి భావనలను సంచలనం నుండి వేరు చేసి — సాధన, సహనం, అవగాహన అనే పునాదిపై నిలబెడతారు.",
@@ -783,7 +887,7 @@ const ARTICLES = [
 
 /* ============ I18N ============ */
 const I18N = {
-  en:{brand:"Golden Age Spiritual Movement",brandsub:"Non-profit · Seva · గురు వాణి",nav_v:"Discourses",nav_a:"Our Guru",nav_t:"Teachings",nav_e:"Events",nav_c:"Contact",
+  en:{brand:"Golden Age Spiritual Movement",brandsub:"Non-profit · Seva · Guru Vani",nav_v:"Discourses",nav_a:"Our Guru",nav_t:"Teachings",nav_e:"Events",nav_c:"Contact",
     eyebrow:"A Non-Profit Spiritual Movement",h1a:"Awakening the World to a",h1b:"Golden Age",h1c:"of Wisdom",
     lede:"The discourses and teachings of Dr Hari Krishna — meditation, transformation and conscious living — shared freely with every seeker, as pure seva.",
     mission:"<b>This platform is social service, nothing else.</b> We do not monetise the teachings. Our goals: make every discourse freely available, and preserve the wisdom for future generations.",
@@ -791,7 +895,7 @@ const I18N = {
     k_b:"Our Pledge",h_b:"Built as seva, designed for seekers",
     b1h:"Free, forever",b1p:"Every discourse, every guided meditation — without paywalls, subscriptions or advertisements. Wisdom is not a product.",
     b2h:"A non-profit pledge",b2p:"Volunteer-run social service, nothing else. We keep nothing for ourselves.",
-    b3h:"In your language",b3p:"The entire platform in English and తెలుగు — switch anytime, one tap.",
+    b3h:"In your language",b3p:"The entire platform in English, ಕನ್ನಡ and తెలుగు — switch anytime, one tap.",
     b4h:"Practice, not just theory",b4p:"Guided meditations and morning sadhana you can sit with today — verified in your own experience, never on belief alone.",
     k_lib:"Video Library",h_lib:"Discourses of Dr Hari Krishna",s_lib:"Tap any discourse to watch instantly — every teaching is free, forever.",
     f_all:"All",f_d:"Discourses",f_m:"Meditation",f_p:"Practices",nores:"No teachings match your search — try another word.",cta_ch:"Explore the full channel on YouTube",
@@ -814,15 +918,46 @@ const I18N = {
     f_about:"A volunteer-run, non-commercial initiative sharing the teachings of Dr Hari Krishna. All discourses remain the property of their creators; videos are embedded from the official YouTube channel.",
     f_ex:"Explore",f_cn:"Connect",f_yt:"YouTube Channel",f_em:"Email Us",f_cf:"Contact Form",devotion:"Made with devotion",
     tb1:"Home",tb2:"Videos",tb3:"Teachings",tb4:"Events",tb5:"Contact",r_watch:"Watch the Discourse",more:"Read more",search:"Search teachings…"},
+  kn:{brand:"ಗೋಲ್ಡನ್ ಏಜ್ ಆಧ್ಯಾತ್ಮಿಕ ಆಂದೋಲನ",brandsub:"ಲಾಭರಹಿತ ಸೇವೆ · ಗುರು ವಾಣಿ",nav_v:"ಪ್ರವಚನಗಳು",nav_a:"ನಮ್ಮ ಗುರುಗಳು",nav_t:"ಬೋಧನೆಗಳು",nav_e:"ಕಾರ್ಯಕ್ರಮಗಳು",nav_c:"ಸಂಪರ್ಕಿಸಿ",
+    eyebrow:"ಲಾಭರಹಿತ ಆಧ್ಯಾತ್ಮಿಕ ಆಂದೋಲನ",h1a:"ಜಗತ್ತನ್ನು ಎಚ್ಚರಗೊಳಿಸೋಣ —",h1b:"ಸುವರ್ಣ ಯುಗದ",h1c:"ಜ್ಞಾನದೆಡೆಗೆ",
+    lede:"ಡಾ. ಹರಿ ಕೃಷ್ಣ ಅವರ ಪ್ರವಚನಗಳು ಮತ್ತು ಬೋಧನೆಗಳು — ಧ್ಯಾನ, ಪರಿವರ್ತನೆ, ಪ್ರಜ್ಞಾಪೂರ್ವಕ ಜೀವನ — ಪ್ರತಿ ಸಾಧಕರಿಗೂ ಉಚಿತವಾಗಿ, ಶುದ್ಧ ಸೇವೆಯಾಗಿ.",
+    mission:"<b>ಈ ವೇದಿಕೆ ಸಮಾಜ ಸೇವೆ ಮಾತ್ರ.</b> ಬೋಧನೆಗಳನ್ನು ನಾವು ವ್ಯಾಪಾರ ಮಾಡುವುದಿಲ್ಲ. ನಮ್ಮ ಗುರಿಗಳು: ಪ್ರತಿ ಪ್ರವಚನವನ್ನು ಉಚಿತವಾಗಿ ಒದಗಿಸುವುದು, ಮುಂದಿನ ಪೀಳಿಗೆಗಳಿಗೆ ಈ ಜ್ಞಾನವನ್ನು ಕಾಪಾಡುವುದು.",
+    cta1:"ಪ್ರವಚನಗಳನ್ನು ವೀಕ್ಷಿಸಿ",cta2:"ನಮ್ಮ ಧ್ಯೇಯ",st1:"ಪ್ರವಚನಗಳು",st2:"ಸದಾ ಉಚಿತ",st3:"ಎಲ್ಲರಿಗೂ ಸ್ವಾಗತ",chip1:"ಯೂಟ್ಯೂಬ್‌ನಲ್ಲಿ ಉಚಿತ",chip2:"ಸ್ವಯಂಸೇವಕ ನಿರ್ವಹಣೆ, ವಾಣಿಜ್ಯೇತರ",featured:"ವಿಶೇಷ ಪ್ರವಚನ",scroll:"ಕೆಳಗೆ",
+    k_b:"ನಮ್ಮ ಪ್ರತಿಜ್ಞೆ",h_b:"ಸೇವೆಯಾಗಿ ನಿರ್ಮಿಸಲಾಗಿದೆ, ಸಾಧಕರಿಗಾಗಿ ರೂಪಿಸಲಾಗಿದೆ",
+    b1h:"ಉಚಿತ, ಶಾಶ್ವತವಾಗಿ",b1p:"ಪ್ರತಿ ಪ್ರವಚನ, ಪ್ರತಿ ಧ್ಯಾನ — ಶುಲ್ಕ, ಚಂದಾ, ಜಾಹೀರಾತು ಇಲ್ಲದೆ. ಜ್ಞಾನ ಮಾರಾಟದ ವಸ್ತುವಲ್ಲ.",
+    b2h:"ಲಾಭರಹಿತ ಪ್ರತಿಜ್ಞೆ",b2p:"ಸ್ವಯಂಸೇವಕರ ಸಮಾಜ ಸೇವೆ ಮಾತ್ರ. ನಮಗಾಗಿ ನಾವು ಏನನ್ನೂ ಇಟ್ಟುಕೊಳ್ಳುವುದಿಲ್ಲ.",
+    b3h:"ನಿಮ್ಮ ಭಾಷೆಯಲ್ಲಿ",b3p:"ಇಡೀ ವೇದಿಕೆ English, ಕನ್ನಡ ಮತ್ತು తెలుగు ಮೂರರಲ್ಲೂ — ಒಂದೇ ಸ್ಪರ್ಶದಲ್ಲಿ ಬದಲಾಯಿಸಿ.",
+    b4h:"ಸಿದ್ಧಾಂತವಲ್ಲ, ಸಾಧನೆ",b4p:"ಇಂದೇ ಕುಳಿತು ಮಾಡಬಹುದಾದ ಮಾರ್ಗದರ್ಶಿತ ಧ್ಯಾನಗಳು, ಮುಂಜಾನೆ ಸಾಧನೆಗಳು — ನಂಬಿಕೆಯ ಮೇಲಲ್ಲ, ಸ್ವಾನುಭವದಲ್ಲಿ ದೃಢೀಕರಣ.",
+    k_lib:"ವೀಡಿಯೊ ಗ್ರಂಥಾಲಯ",h_lib:"ಡಾ. ಹರಿ ಕೃಷ್ಣ ಅವರ ಪ್ರವಚನಗಳು",s_lib:"ಯಾವುದೇ ಪ್ರವಚನವನ್ನು ಒತ್ತಿ ತಕ್ಷಣ ವೀಕ್ಷಿಸಿ — ಪ್ರತಿ ಬೋಧನೆ ಸದಾ ಉಚಿತ.",
+    f_all:"ಎಲ್ಲಾ",f_d:"ಪ್ರವಚನಗಳು",f_m:"ಧ್ಯಾನ",f_p:"ಸಾಧನೆಗಳು",nores:"ಹುಡುಕಾಟಕ್ಕೆ ಹೊಂದುವ ಬೋಧನೆಗಳಿಲ್ಲ — ಬೇರೆ ಪದ ಪ್ರಯತ್ನಿಸಿ.",cta_ch:"ಪೂರ್ಣ ಚಾನೆಲ್ ಯೂಟ್ಯೂಬ್‌ನಲ್ಲಿ ನೋಡಿ",
+    k_ab:"ಪರಿಚಯ",h_ab:"ವಿಜ್ಞಾನ ಮತ್ತು ಆಧ್ಯಾತ್ಮ ಸೇರುವ ಸ್ಥಳ",badge:"ಸಂಸ್ಥಾಪಕರು · ಗೋಲ್ಡನ್ ಏಜ್ ಆಧ್ಯಾತ್ಮಿಕ ಆಂದೋಲನ",
+    ab1:"ಡಾ. ಹರಿ ಕೃಷ್ಣ ಅವರು ಬೆಂಗಳೂರಿನ ವೈದ್ಯರು (MD). 25 ವರ್ಷಗಳಿಗೂ ಹೆಚ್ಚು ಕಾಲ ಪ್ರಜ್ಞೆ ಮತ್ತು ಅಂತರಂಗ ಅನ್ವೇಷಣೆಯ ಅಧ್ಯಯನಕ್ಕೆ ಸಮರ್ಪಿತರಾಗಿದ್ದಾರೆ. ಆಧ್ಯಾತ್ಮಿಕತೆಯನ್ನು ಮೂಢನಂಬಿಕೆಯಾಗಿ ಅಲ್ಲ, ಪ್ರಾಯೋಗಿಕ ವಿಜ್ಞಾನವಾಗಿ — ಉಪನಿಷತ್ತುಗಳ ಶಾಶ್ವತ ಸತ್ಯಗಳನ್ನು ಜೀವಶಾಸ್ತ್ರ, ನರವಿಜ್ಞಾನ, ಮನೋವಿಜ್ಞಾನ ಮತ್ತು ಕ್ವಾಂಟಮ್ ಭೌತಶಾಸ್ತ್ರದ ಭಾಷೆಯಲ್ಲಿ ವಿವರಿಸುತ್ತಾರೆ.",
+    ab2:"ಧ್ಯಾನವನ್ನು ಅವರು ಜೀವನಶೈಲಿಯಾಗಿ ಬೋಧಿಸುತ್ತಾರೆ — ಪಲಾಯನವಲ್ಲ: ಭಯ, ಆತಂಕ ಕರಗಿಸಿ ಕರುಣೆ, ಅರಿವು ಬೆಳೆಸುವ ಪ್ರಾಯೋಗಿಕ ಪರಿವರ್ತನೆ. ಅವರ ಬಳಿ ಕಲಿತವರು ಅವರ ವಿನಯ, ತಾಳ್ಮೆ, ನಿಸ್ವಾರ್ಥ ಬೋಧನೆಯ ಬಗ್ಗೆ ಹೇಳುತ್ತಾರೆ.",
+    t1h:"ವೈದ್ಯರು",t1p:"MD, ವೈದ್ಯಶಾಸ್ತ್ರದಲ್ಲಿ ಸ್ನಾತಕೋತ್ತರ — ದಶಕಗಳ ಕ್ಲಿನಿಕಲ್ ಅನುಭವ.",
+    t2h:"ಸಾಧಕ — 25+ ವರ್ಷಗಳು",t2p:"ಅಂತರ್ಮುಖ ಪ್ರಯಾಣ: ಧ್ಯಾನ, ಉಪನಿಷತ್ತುಗಳು, ಪ್ರಜ್ಞೆಯ ವಿಜ್ಞಾನ.",
+    t3h:"ಗೋಲ್ಡನ್ ಏಜ್ ಆಧ್ಯಾತ್ಮಿಕ ಆಂದೋಲನ",t3p:"ಪರಂಪರೆ ಮತ್ತು ಆಧುನಿಕತೆ ಎರಡನ್ನೂ ಗೌರವಿಸುವ ಪ್ರಜ್ಞಾವಂತ ಸಮುದಾಯ ನಿರ್ಮಾಣ — ವಾಣಿಜ್ಯ ಅಡೆತಡೆಗಳಿಲ್ಲದೆ.",
+    t4h:"ಇಂದು — ಪ್ರತಿ ಸಾಧಕರಿಗೂ ಸೇವೆ",t4p:"ಉಚಿತ ಪ್ರವಚನಗಳು, ಮಾರ್ಗದರ್ಶಿತ ಧ್ಯಾನಗಳು, ಸತ್ಸಂಗಗಳು — ಸ್ವಯಂಸೇವಕರ ಶುದ್ಧ ಸೇವೆಯಾಗಿ.",
+    p1:"ವೈದ್ಯರು · 25+ ವರ್ಷಗಳ ಅಂತರಂಗ ವಿಜ್ಞಾನ",p2:"100% ಲಾಭರಹಿತ",p3:"ಸ್ವಯಂಸೇವಕ ನಿರ್ವಹಣೆ",p4:"ಪ್ರತಿ ಸಾಧಕರಿಗೂ ಉಚಿತ",
+    readmore:"ಪೂರ್ಣ ಲೇಖನ ಓದಿ: “Science Meets Spirit”",
+    k_t:"ಲಿಖಿತ ಜ್ಞಾನ",h_t:"ಬೋಧನೆಗಳು & ಚಿಂತನೆಗಳು",s_t:"ಪ್ರವಚನಗಳ ಸಾರಾಂಶಗಳು — ದೈನಂದಿನ ಜೀವನಕ್ಕಾಗಿ. ಓದಲು ಕಾರ್ಡ್ ಒತ್ತಿರಿ.",
+    qcite:"— ಡಾ. ಹರಿ ಕೃಷ್ಣ ಅವರ ಬೋಧನೆಯ ಹೃದಯದಲ್ಲಿರುವ ಉಪನಿಷತ್ ಮಹಾವಾಕ್ಯಗಳು",
+    k_g:"ನೆನಪುಗಳು",h_g:"ಗ್ಯಾಲರಿ",s_g:"ಸತ್ಸಂಗ, ಸೇವಾ ಕಾರ್ಯಕ್ರಮಗಳ ಚಿತ್ರಗಳು — ಶೀಘ್ರದಲ್ಲಿ.",g1:"ಸತ್ಸಂಗ ಕ್ಷಣಗಳು",g2:"ಸೇವಾ ಕಾರ್ಯಗಳು",g3:"ಧ್ಯಾನ ಕೂಟಗಳು",g4:"ಮುಂಜಾನೆ ಸಾಧನೆ",
+    livetag:"ನೇರ ಸತ್ಸಂಗ",h_live:"ಮುಂದಿನ ನೇರ ಪ್ರಸಾರದಲ್ಲಿ ಭಾಗವಹಿಸಿ",s_live:"ಗುರುಗಳು ನೇರವಾಗಿ ಮಾತನಾಡುವಾಗ ನಮ್ಮ ಯೂಟ್ಯೂಬ್ ಚಾನೆಲ್‌ನಲ್ಲಿ ಪ್ರಸಾರ ಕಾಣಿಸುತ್ತದೆ. ಸಬ್‌ಸ್ಕ್ರೈಬ್ ಮಾಡಿ, ನೋಟಿಫಿಕೇಶನ್ ಆನ್ ಮಾಡಿ.",cta_live:"ಯೂಟ್ಯೂಬ್‌ನಲ್ಲಿ ನೇರ ವೀಕ್ಷಿಸಿ",
+    k_e:"ಸಮಾವೇಶಗಳು",h_e:"ಸತ್ಸಂಗಗಳು & ಸೇವಾ ಕಾರ್ಯಕ್ರಮಗಳು",e1h:"ಸಾಪ್ತಾಹಿಕ ಸತ್ಸಂಗ",e1p:"ಸತ್ಸಂಗದ ಸಮಯ, ಸ್ಥಳ ಅಥವಾ ಪ್ರಸಾರ ಲಿಂಕ್ ಇಲ್ಲಿ ಪ್ರಕಟವಾಗುತ್ತದೆ.",e2h:"ಅನ್ನದಾನ ಸೇವೆ",e2p:"ಮುಂಬರುವ ಅನ್ನದಾನ ಮತ್ತು ಇತರ ಸೇವಾ ಕಾರ್ಯಗಳ ವಿವರಗಳು.",
+    k_j:"ಸಂಪರ್ಕದಲ್ಲಿರಿ",h_j:"ನಮ್ಮೊಂದಿಗೆ ನಡೆಯಿರಿ",j1h:"ಯೂಟ್ಯೂಬ್ ಸಬ್‌ಸ್ಕ್ರೈಬ್ ಮಾಡಿ",j1p:"ಪ್ರತಿ ಹೊಸ ಪ್ರವಚನ, ಧ್ಯಾನ — ಬಿಡುಗಡೆಯಾದ ಕ್ಷಣವೇ, ಉಚಿತವಾಗಿ.",j1c:"ಸಬ್‌ಸ್ಕ್ರೈಬ್",j2h:"ಬೆಳಕನ್ನು ಹಂಚಿರಿ",j2p:"ಈ ಜ್ಞಾನ ಬೇಕಾದ ಸಾಧಕ ಗೊತ್ತೇ? ಒಂದೇ ಸ್ಪರ್ಶದಲ್ಲಿ ಹಂಚಿರಿ.",j2c:"ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಹಂಚಿರಿ",
+    k_c:"ಸಂಪರ್ಕಿಸಿ",h_c:"ಸೇವಾ ತಂಡಕ್ಕೆ ಬರೆಯಿರಿ",s_c:"ನಾವು ಸ್ವಯಂಸೇವಕರು; ಸೇವೆ ಅನುಮತಿಸಿದಷ್ಟು ಬೇಗ ಉತ್ತರಿಸುತ್ತೇವೆ. 🙏",loc:"[ನಗರ, ರಾಜ್ಯ]",send:"ಸಂದೇಶ ಕಳುಹಿಸಿ",
+    f_about:"ಡಾ. ಹರಿ ಕೃಷ್ಣ ಅವರ ಬೋಧನೆಗಳನ್ನು ಹಂಚುವ ಸ್ವಯಂಸೇವಕರ ವಾಣಿಜ್ಯೇತರ ಸೇವಾ ವೇದಿಕೆ. ವೀಡಿಯೊಗಳು ಅಧಿಕೃತ ಯೂಟ್ಯೂಬ್ ಚಾನೆಲ್‌ನಿಂದ ಸೇರಿಸಲಾಗಿದೆ.",
+    f_ex:"ಅನ್ವೇಷಿಸಿ",f_cn:"ಸಂಪರ್ಕ",f_yt:"ಯೂಟ್ಯೂಬ್ ಚಾನೆಲ್",f_em:"ಇಮೇಲ್",f_cf:"ಸಂಪರ್ಕ ಫಾರ್ಮ್",devotion:"ಭಕ್ತಿಯಿಂದ ರೂಪಿಸಲಾಗಿದೆ",
+    tb1:"ಮುಖಪುಟ",tb2:"ವೀಡಿಯೊಗಳು",tb3:"ಬೋಧನೆಗಳು",tb4:"ಕಾರ್ಯಕ್ರಮಗಳು",tb5:"ಸಂಪರ್ಕ",r_watch:"ಪ್ರವಚನ ವೀಕ್ಷಿಸಿ",more:"ಓದಿ",search:"ಬೋಧನೆಗಳನ್ನು ಹುಡುಕಿ…"},
   te:{brand:"గోల్డెన్ ఏజ్ ఆధ్యాత్మిక ఉద్యమం",brandsub:"లాభాపేక్ష లేని సేవ · గురు వాణి",nav_v:"ప్రవచనాలు",nav_a:"మా గురువు",nav_t:"బోధనలు",nav_e:"కార్యక్రమాలు",nav_c:"సంప్రదించండి",
     eyebrow:"లాభాపేక్ష లేని ఆధ్యాత్మిక ఉద్యమం",h1a:"ప్రపంచాన్ని మేల్కొలుపుదాం —",h1b:"స్వర్ణయుగపు",h1c:"జ్ఞానం వైపు",
     lede:"డా. హరి కృష్ణ గారి ప్రవచనాలు, బోధనలు — ధ్యానం, పరివర్తన, చైతన్య జీవనం — ప్రతి సాధకుడికీ ఉచితంగా, స్వచ్ఛమైన సేవగా.",
     mission:"<b>ఈ వేదిక సామాజిక సేవ మాత్రమే.</b> బోధనలను మేము వ్యాపారం చేయము. మా లక్ష్యాలు: ప్రతి ప్రవచనాన్ని ఉచితంగా అందించడం, భవిష్యత్ తరాలకు ఈ జ్ఞానాన్ని భద్రపరచడం.",
-    cta1:"ప్రవచనాలు చూడండి",cta2:"మా లక్ష్యం",st1:"ప్రవచనాలు",st2:"ఎప్పటికీ ఉచితం",st3:"సాధకులందరికీ స్వాగతం",chip1:"యూట్యూబ్‌లో ఉచితంగా",chip2:"వాలంటీర్ల నిర్వహణ, వాణిజ్యేతర",featured:"ప్రత్యేక ప్రవచనం",scroll:"క్రిందికి",
+    cta1:"ప్రవచనాలు చూడండి",cta2:"మా లక్ష్యం",st1:"ప్రవచనాలు",st2:"ఎప్పటికీ ఉచితం",st3:"అందరికీ స్వాగతం",chip1:"యూట్యూబ్‌లో ఉచితంగా",chip2:"వాలంటీర్ల నిర్వహణ, వాణిజ్యేతర",featured:"ప్రత్యేక ప్రవచనం",scroll:"క్రిందికి",
     k_b:"మా ప్రతిజ్ఞ",h_b:"సేవగా నిర్మించబడింది, సాధకుల కోసం రూపొందించబడింది",
     b1h:"ఉచితం, ఎప్పటికీ",b1p:"ప్రతి ప్రవచనం, ప్రతి ధ్యానం — రుసుములు, చందాలు, ప్రకటనలు లేకుండా. జ్ఞానం అమ్మకపు వస్తువు కాదు.",
     b2h:"లాభాపేక్ష లేని ప్రతిజ్ఞ",b2p:"వాలంటీర్ల సామాజిక సేవ మాత్రమే. మాకోసం మేము ఏమీ ఉంచుకోము.",
-    b3h:"మీ భాషలో",b3p:"మొత్తం వేదిక English, తెలుగు రెండింటిలో — ఒక్క నొక్కుతో మారండి.",
+    b3h:"మీ భాషలో",b3p:"మొత్తం వేదిక English, ಕನ್ನಡ మరియు తెలుగు మూడింటిలో — ఒక్క నొక్కుతో మారండి.",
     b4h:"సిద్ధాంతం కాదు, సాధన",b4p:"ఈరోజే కూర్చుని చేయగల మార్గదర్శక ధ్యానాలు, ఉదయ సాధనలు — నమ్మకంపై కాదు, స్వానుభవంలో నిర్ధారణ.",
     k_lib:"వీడియో గ్రంథాలయం",h_lib:"డా. హరి కృష్ణ గారి ప్రవచనాలు",s_lib:"ఏ ప్రవచనంపైనైనా నొక్కి వెంటనే చూడండి — ప్రతి బోధన ఎప్పటికీ ఉచితం.",
     f_all:"అన్నీ",f_d:"ప్రవచనాలు",f_m:"ధ్యానం",f_p:"సాధనలు",nores:"మీ శోధనకు సరిపడే బోధనలు లేవు — మరో పదం ప్రయత్నించండి.",cta_ch:"పూర్తి ఛానెల్ యూట్యూబ్‌లో చూడండి",
@@ -848,30 +983,31 @@ const I18N = {
 };
 let LANG='en';
 function applyLang(){
+  document.body.classList.toggle('kn',LANG==='kn');
   document.body.classList.toggle('te',LANG==='te');
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const k=el.dataset.i18n;
     if(I18N[LANG][k]!==undefined) el.innerHTML=I18N[LANG][k];
   });
-  document.getElementById('langBtn').textContent = LANG==='en'?'తెలుగు':'English';
+  document.querySelectorAll('#langSeg button').forEach(b=>b.classList.toggle('on',b.dataset.lang===LANG));
   document.getElementById('vsearch').placeholder = I18N[LANG].search;
   renderVideos(); renderArticles();
 }
-document.getElementById('langBtn').addEventListener('click',()=>{ LANG=LANG==='en'?'te':'en'; applyLang(); });
+document.querySelectorAll('#langSeg button').forEach(b=>b.addEventListener('click',()=>{ LANG=b.dataset.lang; applyLang(); }));
 
 /* ============ VIDEO LIBRARY ============ */
 let FILTER='all', QUERY='';
 const vgrid=document.getElementById('vgrid');
 function renderVideos(){
   vgrid.innerHTML='';
-  const list=VIDEOS.filter(v=>(FILTER==='all'||v.cat===FILTER)&&(QUERY===''||v.title.toLowerCase().includes(QUERY)||v.te.includes(QUERY)));
+  const list=VIDEOS.filter(v=>(FILTER==='all'||v.cat===FILTER)&&(QUERY===''||v.title.toLowerCase().includes(QUERY)||v.kn.includes(QUERY)||v.te.includes(QUERY)));
   document.getElementById('noRes').style.display=list.length?'none':'block';
   const catLabel={discourse:I18N[LANG].f_d,meditation:I18N[LANG].f_m,practice:I18N[LANG].f_p};
   list.forEach(v=>{
     const c=document.createElement('div');
-    c.className='vcard'; c.dataset.video=v.id;
+    c.className='vcard'; c.dataset.video=v.id; c.tabIndex=0; c.setAttribute('role','button'); c.setAttribute('aria-label','Play: '+v.title);
     c.innerHTML=`<div class="vthumb"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="${v.title}" loading="lazy"><span class="vtag">${catLabel[v.cat]||v.cat}</span><div class="vplay"><i></i></div></div>
-    <div class="vmeta"><h3>${LANG==='te'?v.te:v.title}</h3><p>${LANG==='te'?v.title:v.te} · Dr Hari Krishna</p></div>`;
+    <div class="vmeta"><h3>${LANG==='en'?v.title:(v[LANG]||v.title)}</h3><p>${LANG==='en'?v.kn:v.title} · Dr Hari Krishna</p></div>`;
     vgrid.appendChild(c);
   });
 }
@@ -886,7 +1022,7 @@ const tgrid=document.getElementById('tgrid');
 function renderArticles(){
   tgrid.innerHTML='';
   ARTICLES.forEach((a,i)=>{
-    const L=a[LANG];
+    const L=a[LANG]||a.en;
     const c=document.createElement('article');
     c.className='tcard reveal in';
     c.innerHTML=`<span class="num">0${i+1}</span><div class="bic"><svg class="ic"><use href="#${a.ic}"/></svg></div><h3>${L.t}</h3><p>${L.body[0].slice(0,125)}…</p><span class="more">${I18N[LANG].more} <span class="ar">→</span></span>`;
@@ -896,7 +1032,7 @@ function renderArticles(){
 }
 const reader=document.getElementById('reader');
 function openArticle(i){
-  const a=ARTICLES[i], L=a[LANG], other=a[LANG==='en'?'te':'en'];
+  const a=ARTICLES[i], L=a[LANG]||a.en, other=(LANG==='en'?a.kn:a.en);
   document.getElementById('rTitle').textContent=L.t;
   document.getElementById('rTel').textContent=other.t;
   document.getElementById('rBody').innerHTML=L.body.map(p=>`<p>${p}</p>`).join('');
@@ -915,7 +1051,8 @@ function closeVideo(){ lb.classList.remove('open'); lbf.src=""; document.body.st
 document.addEventListener('click',e=>{ const t=e.target.closest('[data-video]'); if(t) openVideo(t.dataset.video); });
 document.getElementById('lbx').addEventListener('click',closeVideo);
 lb.addEventListener('click',e=>{ if(e.target===lb) closeVideo(); });
-document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeVideo(); closeReader(); } });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeVideo(); closeReader(); }
+  if(e.key==='Enter'&&document.activeElement&&document.activeElement.dataset&&document.activeElement.dataset.video) openVideo(document.activeElement.dataset.video); });
 
 /* ============ CHROME ============ */
 const hdr=document.getElementById('hdr');
@@ -959,10 +1096,10 @@ document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
   const cv=document.getElementById('mesh'); if(!cv) return;
   const cx=cv.getContext('2d'); let W,H,t=0;
   const BLOBS=[
-    {c:'242,178,92', a:.13, r:.55, sx:.72, sy:.3, ox:.22, oy:.14, sp:.00042},
-    {c:'226,99,44',  a:.11, r:.48, sx:.25, sy:.75, ox:.18, oy:.12, sp:.00031},
-    {c:'124,92,255', a:.10, r:.5,  sx:.85, sy:.8,  ox:.15, oy:.18, sp:.00037},
-    {c:'255,210,138',a:.07, r:.38, sx:.5,  sy:.15, ox:.2,  oy:.1,  sp:.00049},
+    {c:'242,178,92', a:.22, r:.55, sx:.72, sy:.3, ox:.22, oy:.14, sp:.00042},
+    {c:'226,99,44',  a:.19, r:.48, sx:.25, sy:.75, ox:.18, oy:.12, sp:.00031},
+    {c:'124,92,255', a:.20, r:.5,  sx:.85, sy:.8,  ox:.15, oy:.18, sp:.00037},
+    {c:'255,210,138',a:.12, r:.38, sx:.5,  sy:.15, ox:.2,  oy:.1,  sp:.00049},
   ];
   function size(){ const p=cv.parentElement; W=cv.width=p.offsetWidth; H=cv.height=p.offsetHeight; }
   size(); addEventListener('resize',size);
@@ -1016,5 +1153,7 @@ const mq=document.getElementById('mqTrack'); mq.innerHTML+=mq.innerHTML;
 addEventListener('load',()=>setTimeout(()=>document.getElementById('pre').classList.add('done'),650));
 setTimeout(()=>document.getElementById('pre').classList.add('done'),2500);
 </script>
+<!-- Visitor counter: register the code "goldenagegurus" free at goatcounter.com to activate -->
+<script data-goatcounter="https://goldenagegurus.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
